@@ -44,7 +44,7 @@ body {
     font-family: "Montserrat", sans-serif;
     line-height: 1.6;
     color: var(--color-gray-200);
-    overflow: hidden;
+    /* overflow: hidden; */
     background: var(--color-bg);
     font-size: 0.9rem;
 }

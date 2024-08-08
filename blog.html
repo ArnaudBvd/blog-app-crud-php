@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Multipage Responsive</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JAVASCRIPT -->
+    <script src="main.js" defer></script>
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- GOOGLE FONT (MONTSERRAT) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <header>
+        <nav>
+            <div class="container nav__container">
+                <a href="index.html" class="nav__logo">EXPLORABLOG</a>
+                <ul class="nav__items">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="signin.html">Se connecter</a></li>
+                    <li class="nav__profile">
+                        <div class="avatar">
+                            <img src="./images/admin.webp">
+                        </div>
+                        <ul>
+                            <li><a href="dashboard.html">Tableau de bord</a></li>
+                            <li><a href="logout.html">Se déconnecter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <button id="open__nav-btn"><i class="uil uil-bars"></i></button>
+                <button id="close__nav-btn"><i class="uil uil-multiply"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SEARCH BAR -->
+    <section class="search__bar">
+        <form class="container search__bar-container" action="">
+            <div>
+                <i class="uil uil-search"></i>
+                <input type="search" name="" placeholder="Rechercher">
+            </div>
+            <button type="submit">Chercher</button>
+        </form>
+    </section>
+
+
+    <!-- POSTS -->
+    <section class="posts">
+        <div class="container posts__container">
+            <article class="post">
+                <div class="post__thumbnail">
+                    <img src="./images/blog2.webp">
+                </div>
+                <div class="post__info">
+                    <a href="" class="category__button">Nutrition</a>
+                    <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sapiente, facere?</a></h3>
+                    <p class="post__body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quam quod eos maiores impedit
+                        voluptatem totam quibusdam magni, facilis excepturi doloribus temporibus sed expedita.
+                    </p>
+                    <div class="post__author">
+                        <div class="post__author-avatar">
+                            <img src="./images/admin.webp">
+                        </div>
+                        <div class="post__author-info">
+                            <h5>Par : Arnaud Bravard</h5>
+                            <small>04 août 2024 - 14h11</small>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post__thumbnail">
+                    <img src="./images/blog3.webp">
+                </div>
+                <div class="post__info">
+                    <a href="" class="category__button">Science & technologie</a>
+                    <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sapiente, facere?</a></h3>
+                    <p class="post__body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quam quod eos maiores impedit
+                        voluptatem totam quibusdam magni, facilis excepturi doloribus temporibus sed expedita.
+                    </p>
+                    <div class="post__author">
+                        <div class="post__author-avatar">
+                            <img src="./images/author2.webp">
+                        </div>
+                        <div class="post__author-info">
+                            <h5>Par : Lucie Martin</h5>
+                            <small>04 août 2024 - 14h11</small>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post__thumbnail">
+                    <img src="./images/blog4.webp">
+                </div>
+                <div class="post__info">
+                    <a href="" class="category__button">Art</a>
+                    <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sapiente, facere?</a></h3>
+                    <p class="post__body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quam quod eos maiores impedit
+                        voluptatem totam quibusdam magni, facilis excepturi doloribus temporibus sed expedita.
+                    </p>
+                    <div class="post__author">
+                        <div class="post__author-avatar">
+                            <img src="./images/author4.webp">
+                        </div>
+                        <div class="post__author-info">
+                            <h5>Par : Yann Bernard</h5>
+                            <small>04 août 2024 - 14h11</small>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post__thumbnail">
+                    <img src="./images/blog5.webp">
+                </div>
+                <div class="post__info">
+                    <a href="" class="category__button">Science & technologie</a>
+                    <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sapiente, facere?</a></h3>
+                    <p class="post__body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quam quod eos maiores impedit
+                        voluptatem totam quibusdam magni, facilis excepturi doloribus temporibus sed expedita.
+                    </p>
+                    <div class="post__author">
+                        <div class="post__author-avatar">
+                            <img src="./images/author3.webp">
+                        </div>
+                        <div class="post__author-info">
+                            <h5>Par : Emma Durand</h5>
+                            <small>04 août 2024 - 14h11</small>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post__thumbnail">
+                    <img src="./images/blog6.webp">
+                </div>
+                <div class="post__info">
+                    <a href="" class="category__button">Musique</a>
+                    <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sapiente, facere?</a></h3>
+                    <p class="post__body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quam quod eos maiores impedit
+                        voluptatem totam quibusdam magni, facilis excepturi doloribus temporibus sed expedita.
+                    </p>
+                    <div class="post__author">
+                        <div class="post__author-avatar">
+                            <img src="./images/author5.webp">
+                        </div>
+                        <div class="post__author-info">
+                            <h5>Par : Thomas Dupont</h5>
+                            <small>04 août 2024 - 14h11</small>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post__thumbnail">
+                    <img src="./images/blog7.webp">
+                </div>
+                <div class="post__info">
+                    <a href="" class="category__button">Sport</a>
+                    <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sapiente, facere?</a></h3>
+                    <p class="post__body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quam quod eos maiores impedit
+                        voluptatem totam quibusdam magni, facilis excepturi doloribus temporibus sed expedita.
+                    </p>
+                    <div class="post__author">
+                        <div class="post__author-avatar">
+                            <img src="./images/admin.webp">
+                        </div>
+                        <div class="post__author-info">
+                            <h5>Par : Arnaud Bravard</h5>
+                            <small>04 août 2024 - 14h11</small>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post__thumbnail">
+                    <img src="./images/blog8.webp">
+                </div>
+                <div class="post__info">
+                    <a href="" class="category__button">Nature</a>
+                    <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sapiente, facere?</a></h3>
+                    <p class="post__body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quam quod eos maiores impedit
+                        voluptatem totam quibusdam magni, facilis excepturi doloribus temporibus sed expedita.
+                    </p>
+                    <div class="post__author">
+                        <div class="post__author-avatar">
+                            <img src="./images/author2.webp">
+                        </div>
+                        <div class="post__author-info">
+                            <h5>Par : Lucie Martin</h5>
+                            <small>04 août 2024 - 14h11</small>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post__thumbnail">
+                    <img src="./images/blog11.webp">
+                </div>
+                <div class="post__info">
+                    <a href="" class="category__button">Sport</a>
+                    <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sapiente, facere?</a></h3>
+                    <p class="post__body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quam quod eos maiores impedit
+                        voluptatem totam quibusdam magni, facilis excepturi doloribus temporibus sed expedita.
+                    </p>
+                    <div class="post__author">
+                        <div class="post__author-avatar">
+                            <img src="./images/admin.webp">
+                        </div>
+                        <div class="post__author-info">
+                            <h5>Par : Arnaud Bravard</h5>
+                            <small>04 août 2024 - 14h11</small>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="category__buttons">
+        <div class="container category__buttons-container">
+            <a href="" class="category__button">Nature</a>
+            <a href="" class="category__button">Nutrition</a>
+            <a href="" class="category__button">Art</a>
+            <a href="" class="category__button">Science & technologie</a>
+            <a href="" class="category__button">Musique</a>
+            <a href="" class="category__button">Sport</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer__socials">
+            <a href="https://www.youtube.com/" target="_blank">
+                <i class="uil uil-youtube"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="uil uil-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="uil uil-instagram-alt"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <i class="uil uil-linkedin"></i>
+            </a>
+            <a href="https://x.com/" target="_blank">
+                <i class="uil uil-twitter"></i>
+            </a>
+        </div>
+        <div class="container footer__container">
+            <article>
+                <h4>Catégories</h4>
+                <ul>
+                    <li><a href="">Nature</a></li>
+                    <li><a href="">Nutrition</a></li>
+                    <li><a href="">Art</a></li>
+                    <li><a href="">Science & technologie</a></li>
+                    <li><a href="">Musique</a></li>
+                    <li><a href="">Sport</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>Assistance</h4>
+                <ul>
+                    <li><a href="">Assistance en ligne</a></li>
+                    <li><a href="">Numéro d'appel</a></li>
+                    <li><a href="">Emails</a></li>
+                    <li><a href="">Réseau de soutien social</a></li>
+                    <li><a href="">Localisation</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>Blog</h4>
+                <ul>
+                    <li><a href="">Sécurité</a></li>
+                    <li><a href="">Nutrition</a></li>
+                    <li><a href="">Vu récemment</a></li>
+                    <li><a href="">Populaire</a></li>
+                    <li><a href="">Catégories</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>Liens</h4>
+                <ul>
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">À propos</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </article>
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; 2024 EXPLORABLOG</small>
+        </div>
+    </footer>
+
+</body>
+
+</html>
